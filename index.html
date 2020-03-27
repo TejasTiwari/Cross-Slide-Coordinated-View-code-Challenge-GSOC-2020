@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>caMicroscope</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>Cross Slide Coordinated View</h1>
+
+    <label class="views">
+        <input id= "independent" type="radio" name="view" onclick= "viewind()">Independent View
+    <span class=" view-sel"></span class="view-sel">
+    </label>
+    <br><br>
+    <label class="views">
+        <input id="synchronize" type="radio" name="view" onclick="viewsync()">Synchronized View
+        <span class=" view-sel"></span class="view-sel">
+    </label>
+    <label class="views" id="zfactor">
+        Relative Zoom Factor (x) 1<input id= "relativezoom" type="range" min="1" max="5" value=1>5
+        <span class="view-sel"></span class="view-sel">
+    </label>
+    <br><br>
+    <label class="views">
+        <input id= "locate" type="radio" name="view" onclick= "setloc()">Locate Point
+    <span class=" view-sel"></span class="view-sel">
+    </label>
+	<img src="point.png" id="loc1">
+	<img src="point.png" id="loc2">
+    <div class="container">
+        <div id="osview1"></div>
+        <div id="osview2"></div>
+        <div> Rotate: 0<input id="rot1" type="range" min="0" max="360" class="rotate" value="0"></input> 360</div>
+        <div> Rotate: 0<input id="rot2" type="range" min="0" max="360" class="rotate" value="0"></input> 360</div>
+    </div>
+    <script src="openseadragon/openseadragon.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>
