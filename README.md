@@ -16,3 +16,6 @@ The website opens two OpenSeadragon instances of the same image. The 3 checkboxe
 2. https://javascript.info/
 3. https://stackoverflow.com/
 
+# Libraries Used:-
+1. OpenSeadragon:- http://openseadragon.github.io/
+2. deepzoom.py:- https://github.com/openzoom/deepzoom.py
